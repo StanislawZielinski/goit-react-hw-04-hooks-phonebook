@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Filter extends Component {
+const Filter = ({onChange}) => {
 
-    render() {
         return (
             <div>
                 <p className="title">Contacts</p>
                 <p className="filter-title">filter contacts by name</p>
-                <input className="input" onChange={this.props.onChange} />
+                <input className="input" onChange={onChange} />
             </div>
     )}
-}
 
 export default Filter

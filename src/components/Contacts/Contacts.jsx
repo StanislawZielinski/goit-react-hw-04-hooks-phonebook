@@ -1,12 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Contacts extends Component {
+const Contacts = ({renderContacts, filter, contacts}) => {
 
-    render() {
         return (
             <div>
-                <ul>{this.props.renderContacts(this.props.filter, this.props.contacts)}</ul>
-                </div>
+                <ul>{renderContacts(filter, contacts)}</ul>
+            </div>
     )}
-}
 export default Contacts

@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
 
-class Form extends Component {
+const Form = ({handleSubmit}) => {
     
-render() {
     return (
-            <form className="form" onSubmit={this.props.handleSubmit}>
+            <form className="form" onSubmit={handleSubmit}>
             <p className="title">Phonebook</p>
             <div className="input-wrapper">
                 <label className="label">Name
@@ -31,7 +30,7 @@ render() {
             </div>
                 <button className="button" type="submit">Add contact</button>
             </form>
-    )}
+    )
 }
 
 export default Form
